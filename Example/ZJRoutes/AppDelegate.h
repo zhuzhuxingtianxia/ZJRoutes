@@ -1,5 +1,5 @@
 //
-//  ZJViewController.h
+//  AppDelegate.h
 //  ZJRoutes
 //
 //  Created by 873391579@qq.com on 08/28/2018.
@@ -8,6 +8,8 @@
 
 @import UIKit;
 
-@interface ZJViewController : UIViewController
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
+
+@property (strong, nonatomic) UIWindow *window;
 
 @end

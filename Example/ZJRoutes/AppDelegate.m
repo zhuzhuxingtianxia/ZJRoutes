@@ -1,19 +1,35 @@
 //
-//  ZJAppDelegate.m
+//  AppDelegate.m
 //  ZJRoutes
 //
 //  Created by 873391579@qq.com on 08/28/2018.
 //  Copyright (c) 2018 873391579@qq.com. All rights reserved.
 //
 
-#import "ZJAppDelegate.h"
-
-@implementation ZJAppDelegate
+#import "AppDelegate.h"
+#import <ZJRoutes/ZJRoutes.h>
+@implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
     return YES;
+}
+
+//iOS9一下系统使用
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(nullable NSString *)sourceApplication annotation:(id)annotation{
+    
+    BOOL route = [ZJRoutes routeURL:url];
+    return route;
+}
+
+//iOS10以上系统
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *, id> *)options{
+    
+    BOOL route = [ZJRoutes routeURL:url];
+    return route;
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

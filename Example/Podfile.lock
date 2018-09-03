@@ -1,0 +1,16 @@
+PODS:
+  - ZJRoutes (0.0.1)
+
+DEPENDENCIES:
+  - ZJRoutes (from `../`)
+
+EXTERNAL SOURCES:
+  ZJRoutes:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ZJRoutes: fd467f3581f6a556e2c279dbe46947b48082f817
+
+PODFILE CHECKSUM: 43581f4a2b2bfec4b541ab7068ecbbe243d950f8
+
+COCOAPODS: 1.5.3
