@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZJRoutes'
-  s.version          = '0.0.2'
-  s.summary          = 'ZJRoutes一个轻量的路由框架'
+  s.version          = '0.0.3'
+  s.summary          = 'ZJRoutes轻量路由框架、ZJMediator中间件'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: 实现一个简单的路由框架.
+TODO: ZJRoutes一个简单的路由框架、ZJMediator跳转中间件.
                        DESC
 
   s.homepage         = 'https://github.com/zhuzhuxingtianxia/ZJRoutes'
