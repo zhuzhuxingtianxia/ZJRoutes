@@ -34,7 +34,8 @@
 }
 
 -(void)nextAction:(UIButton*)sender {
-    NSDictionary *dict = @{
+    NSDictionary *dict = @{@"baseTitle":@"AA",
+                           @"userName":@"BBBBB"
                            };
     [self routeTargetController:@"Mediator1Controller" withParams:dict byRouteStyle:ZJRoute_Pop];
 }

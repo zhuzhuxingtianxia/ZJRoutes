@@ -10,6 +10,8 @@
 #import "ENUM.h"
 
 @interface Mediator1Controller ()
+@property (nonatomic,strong)UILabel *titleLabel;
+@property (nonatomic,strong)UILabel *userNameLabel;
 
 @end
 
@@ -20,23 +22,22 @@
     // Do any additional setup after loading the view.
     self.title = @"Mediator1";
     
-    UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 80, 200, 40)];
-    [self.view addSubview:titleLabel];
-    
-    titleLabel.text = [NSString stringWithFormat:@"baseTitle:%@",self.baseTitle];
-    
-    UILabel *userNameLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 160, 200, 40)];
-    [self.view addSubview:userNameLabel];
-    
-    userNameLabel.text = [NSString stringWithFormat:@"userName:%@",self.userName];
-    
-    
     UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
     button.frame = CGRectMake(10, 240, 200, 40);
     [button setTitle:@"下一页" forState:UIControlStateNormal];
     [button addTarget:self action:@selector(nextAction:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
     
+}
+
+-(void)setUserName:(NSString *)userName {
+    _userName = userName;
+    self.userNameLabel.text = [NSString stringWithFormat:@"userName:%@",_userName];
+}
+
+-(void)setBaseTitle:(NSString *)baseTitle {
+    [super setBaseTitle:baseTitle];
+    self.titleLabel.text = [NSString stringWithFormat:@"baseTitle:%@",baseTitle];
 }
 
 -(void)nextAction:(UIButton*)sender {
@@ -49,6 +50,26 @@
         [self routeTargetController:@"Mediator2Controller" withParams:dict byRouteStyle:ZJRoute_PushNo];
     }
     
+}
+
+
+#pragma mark - srtter
+-(UILabel*)titleLabel {
+    if (!_titleLabel) {
+        UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 80, 200, 40)];
+        [self.view addSubview:titleLabel];
+        _titleLabel = titleLabel;
+    }
+    return _titleLabel;
+}
+
+-(UILabel*)userNameLabel {
+    if (!_userNameLabel) {
+        UILabel *userNameLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 160, 200, 40)];
+        [self.view addSubview:userNameLabel];
+        _userNameLabel = userNameLabel;
+    }
+    return _userNameLabel;
 }
 
 - (void)didReceiveMemoryWarning {
