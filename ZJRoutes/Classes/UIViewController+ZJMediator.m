@@ -198,6 +198,18 @@ static NSMutableDictionary *routesMap = nil;
     NSMutableArray *keysArray = [NSMutableArray array];
     [keysArray addObjectsFromArray:[self _copyPropertyList:vc]];
     
+    NSMutableSet *set1 = [NSMutableSet setWithArray:keysArray];
+    NSMutableSet *set2 = [NSMutableSet setWithArray:parameters.allKeys];
+    //[set1 intersectSet:set2];//交集
+    [set2 minusSet:set1];//差集
+    if (set2.count > 0) {
+        NSString *errorString = [NSString stringWithFormat:@"%@ not found Property ",vc];
+        for (NSString *key in set2) {
+           errorString = [errorString stringByAppendingString:[NSString stringWithFormat:@"\"%@\" \n",key]];
+        }
+        NSAssert(NO, errorString);
+    }
+    
     for (int i = 0; i < keysArray.count; i++) {
        
         NSString *key = keysArray[i];
