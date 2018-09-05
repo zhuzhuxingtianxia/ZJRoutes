@@ -12,7 +12,6 @@
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
-		6003F59E195388D20070C39A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* AppDelegate.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -21,14 +20,21 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		B6EDEA37213CC76400E1E30E /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EDEA29213CC76300E1E30E /* SettingViewController.m */; };
-		B6EDEA38213CC76400E1E30E /* TabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EDEA2A213CC76300E1E30E /* TabbarController.m */; };
-		B6EDEA39213CC76400E1E30E /* FourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EDEA2C213CC76400E1E30E /* FourViewController.m */; };
-		B6EDEA3A213CC76400E1E30E /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EDEA2D213CC76400E1E30E /* NavigationController.m */; };
-		B6EDEA3B213CC76400E1E30E /* OneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EDEA2F213CC76400E1E30E /* OneViewController.m */; };
-		B6EDEA3C213CC76400E1E30E /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EDEA32213CC76400E1E30E /* HomeViewController.m */; };
-		B6EDEA3D213CC76400E1E30E /* ThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EDEA33213CC76400E1E30E /* ThreeViewController.m */; };
-		B6EDEA3E213CC76400E1E30E /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EDEA34213CC76400E1E30E /* TwoViewController.m */; };
+		B68C2266213F7E0400AAFB43 /* BaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = B68C2265213F7E0400AAFB43 /* BaseController.m */; };
+		B68C2269213F7E7100AAFB43 /* Mediator1Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = B68C2268213F7E7100AAFB43 /* Mediator1Controller.m */; };
+		B68C226C213F7E8100AAFB43 /* Mediator2Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = B68C226B213F7E8100AAFB43 /* Mediator2Controller.m */; };
+		B68C226F213F7E8F00AAFB43 /* Mediator3Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = B68C226E213F7E8F00AAFB43 /* Mediator3Controller.m */; };
+		B6EDEA46213D54E700E1E30E /* TabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EDEA40213D54E700E1E30E /* TabbarController.m */; };
+		B6EDEA47213D54E700E1E30E /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EDEA44213D54E700E1E30E /* NavigationController.m */; };
+		B6EDEA48213D54E700E1E30E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EDEA45213D54E700E1E30E /* AppDelegate.m */; };
+		B6EDEA56213D54F300E1E30E /* FourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EDEA4A213D54F300E1E30E /* FourViewController.m */; };
+		B6EDEA57213D54F300E1E30E /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EDEA4B213D54F300E1E30E /* HomeViewController.m */; };
+		B6EDEA58213D54F300E1E30E /* OneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EDEA4C213D54F300E1E30E /* OneViewController.m */; };
+		B6EDEA59213D54F300E1E30E /* ThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EDEA4D213D54F300E1E30E /* ThreeViewController.m */; };
+		B6EDEA5A213D54F300E1E30E /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EDEA4F213D54F300E1E30E /* TwoViewController.m */; };
+		B6EDEA5B213D54F300E1E30E /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EDEA55213D54F300E1E30E /* SettingViewController.m */; };
+		B6EDEA5F213D566900E1E30E /* SegmentLayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EDEA5E213D566900E1E30E /* SegmentLayerView.m */; };
+		B6EDEA62213D59C600E1E30E /* ZJCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EDEA61213D59C600E1E30E /* ZJCollectionView.m */; };
 		E9442787C9A6B4F0385E8E4B /* Pods_ZJRoutes_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7221F5D49F4067F3C4EFA8E0 /* Pods_ZJRoutes_Tests.framework */; };
 		ED879A17CF2F064A96F4099F /* Pods_ZJRoutes_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84558A6A0BC6388CAB935FCE /* Pods_ZJRoutes_Example.framework */; };
 /* End PBXBuildFile section */
@@ -56,8 +62,6 @@
 		6003F597195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F599195388D20070C39A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6003F59B195388D20070C39A /* ZJRoutes-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZJRoutes-Prefix.pch"; sourceTree = "<group>"; };
-		6003F59C195388D20070C39A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		6003F59D195388D20070C39A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AE195388D20070C39A /* ZJRoutes_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZJRoutes_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -71,22 +75,36 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8DA373E4F9A5F34DE7CF975C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		B58418CA7CBD5E08BC6DAA31 /* Pods-ZJRoutes_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZJRoutes_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZJRoutes_Example/Pods-ZJRoutes_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		B6EDEA27213CC76300E1E30E /* OneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneViewController.h; sourceTree = "<group>"; };
-		B6EDEA28213CC76300E1E30E /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
-		B6EDEA29213CC76300E1E30E /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
-		B6EDEA2A213CC76300E1E30E /* TabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabbarController.m; sourceTree = "<group>"; };
-		B6EDEA2B213CC76400E1E30E /* TwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoViewController.h; sourceTree = "<group>"; };
-		B6EDEA2C213CC76400E1E30E /* FourViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourViewController.m; sourceTree = "<group>"; };
-		B6EDEA2D213CC76400E1E30E /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
-		B6EDEA2E213CC76400E1E30E /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
-		B6EDEA2F213CC76400E1E30E /* OneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneViewController.m; sourceTree = "<group>"; };
-		B6EDEA30213CC76400E1E30E /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
-		B6EDEA31213CC76400E1E30E /* TabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabbarController.h; sourceTree = "<group>"; };
-		B6EDEA32213CC76400E1E30E /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
-		B6EDEA33213CC76400E1E30E /* ThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeViewController.m; sourceTree = "<group>"; };
-		B6EDEA34213CC76400E1E30E /* TwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoViewController.m; sourceTree = "<group>"; };
-		B6EDEA35213CC76400E1E30E /* ThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeViewController.h; sourceTree = "<group>"; };
-		B6EDEA36213CC76400E1E30E /* FourViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourViewController.h; sourceTree = "<group>"; };
+		B68C2264213F7E0400AAFB43 /* BaseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseController.h; sourceTree = "<group>"; };
+		B68C2265213F7E0400AAFB43 /* BaseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseController.m; sourceTree = "<group>"; };
+		B68C2267213F7E7100AAFB43 /* Mediator1Controller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mediator1Controller.h; sourceTree = "<group>"; };
+		B68C2268213F7E7100AAFB43 /* Mediator1Controller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mediator1Controller.m; sourceTree = "<group>"; };
+		B68C226A213F7E8100AAFB43 /* Mediator2Controller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mediator2Controller.h; sourceTree = "<group>"; };
+		B68C226B213F7E8100AAFB43 /* Mediator2Controller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mediator2Controller.m; sourceTree = "<group>"; };
+		B68C226D213F7E8F00AAFB43 /* Mediator3Controller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mediator3Controller.h; sourceTree = "<group>"; };
+		B68C226E213F7E8F00AAFB43 /* Mediator3Controller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mediator3Controller.m; sourceTree = "<group>"; };
+		B6EDEA40213D54E700E1E30E /* TabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabbarController.m; sourceTree = "<group>"; };
+		B6EDEA41213D54E700E1E30E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B6EDEA42213D54E700E1E30E /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
+		B6EDEA43213D54E700E1E30E /* TabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabbarController.h; sourceTree = "<group>"; };
+		B6EDEA44213D54E700E1E30E /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
+		B6EDEA45213D54E700E1E30E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B6EDEA4A213D54F300E1E30E /* FourViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourViewController.m; sourceTree = "<group>"; };
+		B6EDEA4B213D54F300E1E30E /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		B6EDEA4C213D54F300E1E30E /* OneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneViewController.m; sourceTree = "<group>"; };
+		B6EDEA4D213D54F300E1E30E /* ThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeViewController.m; sourceTree = "<group>"; };
+		B6EDEA4E213D54F300E1E30E /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		B6EDEA4F213D54F300E1E30E /* TwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoViewController.m; sourceTree = "<group>"; };
+		B6EDEA50213D54F300E1E30E /* OneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneViewController.h; sourceTree = "<group>"; };
+		B6EDEA51213D54F300E1E30E /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		B6EDEA52213D54F300E1E30E /* FourViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourViewController.h; sourceTree = "<group>"; };
+		B6EDEA53213D54F300E1E30E /* ThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeViewController.h; sourceTree = "<group>"; };
+		B6EDEA54213D54F300E1E30E /* TwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoViewController.h; sourceTree = "<group>"; };
+		B6EDEA55213D54F300E1E30E /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		B6EDEA5D213D566900E1E30E /* SegmentLayerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SegmentLayerView.h; sourceTree = "<group>"; };
+		B6EDEA5E213D566900E1E30E /* SegmentLayerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SegmentLayerView.m; sourceTree = "<group>"; };
+		B6EDEA60213D59C600E1E30E /* ZJCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJCollectionView.h; sourceTree = "<group>"; };
+		B6EDEA61213D59C600E1E30E /* ZJCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJCollectionView.m; sourceTree = "<group>"; };
 		C46EA3FA85F6E94B5B827CFB /* Pods-ZJRoutes_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZJRoutes_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZJRoutes_Example/Pods-ZJRoutes_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -153,24 +171,10 @@
 		6003F593195388D20070C39A /* Example for ZJRoutes */ = {
 			isa = PBXGroup;
 			children = (
-				6003F59C195388D20070C39A /* AppDelegate.h */,
-				6003F59D195388D20070C39A /* AppDelegate.m */,
-				B6EDEA28213CC76300E1E30E /* NavigationController.h */,
-				B6EDEA2D213CC76400E1E30E /* NavigationController.m */,
-				B6EDEA31213CC76400E1E30E /* TabbarController.h */,
-				B6EDEA2A213CC76300E1E30E /* TabbarController.m */,
-				B6EDEA2E213CC76400E1E30E /* HomeViewController.h */,
-				B6EDEA32213CC76400E1E30E /* HomeViewController.m */,
-				B6EDEA30213CC76400E1E30E /* SettingViewController.h */,
-				B6EDEA29213CC76300E1E30E /* SettingViewController.m */,
-				B6EDEA36213CC76400E1E30E /* FourViewController.h */,
-				B6EDEA2C213CC76400E1E30E /* FourViewController.m */,
-				B6EDEA27213CC76300E1E30E /* OneViewController.h */,
-				B6EDEA2F213CC76400E1E30E /* OneViewController.m */,
-				B6EDEA35213CC76400E1E30E /* ThreeViewController.h */,
-				B6EDEA33213CC76400E1E30E /* ThreeViewController.m */,
-				B6EDEA2B213CC76400E1E30E /* TwoViewController.h */,
-				B6EDEA34213CC76400E1E30E /* TwoViewController.m */,
+				B6EDEA3F213D54E700E1E30E /* AppDelegate */,
+				B6EDEA49213D54F300E1E30E /* Classes */,
+				B6EDEA5C213D558600E1E30E /* Segment */,
+				B68C2263213F7DCB00AAFB43 /* MediatorExample */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
@@ -218,6 +222,64 @@
 				3E53225480D7DB815912A711 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		B68C2263213F7DCB00AAFB43 /* MediatorExample */ = {
+			isa = PBXGroup;
+			children = (
+				B68C2264213F7E0400AAFB43 /* BaseController.h */,
+				B68C2265213F7E0400AAFB43 /* BaseController.m */,
+				B68C2267213F7E7100AAFB43 /* Mediator1Controller.h */,
+				B68C2268213F7E7100AAFB43 /* Mediator1Controller.m */,
+				B68C226A213F7E8100AAFB43 /* Mediator2Controller.h */,
+				B68C226B213F7E8100AAFB43 /* Mediator2Controller.m */,
+				B68C226D213F7E8F00AAFB43 /* Mediator3Controller.h */,
+				B68C226E213F7E8F00AAFB43 /* Mediator3Controller.m */,
+			);
+			path = MediatorExample;
+			sourceTree = "<group>";
+		};
+		B6EDEA3F213D54E700E1E30E /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				B6EDEA41213D54E700E1E30E /* AppDelegate.h */,
+				B6EDEA45213D54E700E1E30E /* AppDelegate.m */,
+				B6EDEA42213D54E700E1E30E /* NavigationController.h */,
+				B6EDEA44213D54E700E1E30E /* NavigationController.m */,
+				B6EDEA43213D54E700E1E30E /* TabbarController.h */,
+				B6EDEA40213D54E700E1E30E /* TabbarController.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		B6EDEA49213D54F300E1E30E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B6EDEA51213D54F300E1E30E /* HomeViewController.h */,
+				B6EDEA4B213D54F300E1E30E /* HomeViewController.m */,
+				B6EDEA4E213D54F300E1E30E /* SettingViewController.h */,
+				B6EDEA55213D54F300E1E30E /* SettingViewController.m */,
+				B6EDEA50213D54F300E1E30E /* OneViewController.h */,
+				B6EDEA4C213D54F300E1E30E /* OneViewController.m */,
+				B6EDEA54213D54F300E1E30E /* TwoViewController.h */,
+				B6EDEA4F213D54F300E1E30E /* TwoViewController.m */,
+				B6EDEA53213D54F300E1E30E /* ThreeViewController.h */,
+				B6EDEA4D213D54F300E1E30E /* ThreeViewController.m */,
+				B6EDEA52213D54F300E1E30E /* FourViewController.h */,
+				B6EDEA4A213D54F300E1E30E /* FourViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		B6EDEA5C213D558600E1E30E /* Segment */ = {
+			isa = PBXGroup;
+			children = (
+				B6EDEA5D213D566900E1E30E /* SegmentLayerView.h */,
+				B6EDEA5E213D566900E1E30E /* SegmentLayerView.m */,
+				B6EDEA60213D59C600E1E30E /* ZJCollectionView.h */,
+				B6EDEA61213D59C600E1E30E /* ZJCollectionView.m */,
+			);
+			path = Segment;
 			sourceTree = "<group>";
 		};
 		FE0D1D893AA9A9E274DDD50C /* Pods */ = {
@@ -390,16 +452,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F59E195388D20070C39A /* AppDelegate.m in Sources */,
-				B6EDEA38213CC76400E1E30E /* TabbarController.m in Sources */,
-				B6EDEA39213CC76400E1E30E /* FourViewController.m in Sources */,
-				B6EDEA3E213CC76400E1E30E /* TwoViewController.m in Sources */,
-				B6EDEA3A213CC76400E1E30E /* NavigationController.m in Sources */,
+				B68C2269213F7E7100AAFB43 /* Mediator1Controller.m in Sources */,
+				B6EDEA56213D54F300E1E30E /* FourViewController.m in Sources */,
+				B6EDEA46213D54E700E1E30E /* TabbarController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
-				B6EDEA3B213CC76400E1E30E /* OneViewController.m in Sources */,
-				B6EDEA3D213CC76400E1E30E /* ThreeViewController.m in Sources */,
-				B6EDEA37213CC76400E1E30E /* SettingViewController.m in Sources */,
-				B6EDEA3C213CC76400E1E30E /* HomeViewController.m in Sources */,
+				B68C226C213F7E8100AAFB43 /* Mediator2Controller.m in Sources */,
+				B6EDEA5B213D54F300E1E30E /* SettingViewController.m in Sources */,
+				B6EDEA57213D54F300E1E30E /* HomeViewController.m in Sources */,
+				B6EDEA48213D54E700E1E30E /* AppDelegate.m in Sources */,
+				B6EDEA59213D54F300E1E30E /* ThreeViewController.m in Sources */,
+				B6EDEA47213D54E700E1E30E /* NavigationController.m in Sources */,
+				B6EDEA62213D59C600E1E30E /* ZJCollectionView.m in Sources */,
+				B6EDEA5A213D54F300E1E30E /* TwoViewController.m in Sources */,
+				B68C226F213F7E8F00AAFB43 /* Mediator3Controller.m in Sources */,
+				B68C2266213F7E0400AAFB43 /* BaseController.m in Sources */,
+				B6EDEA58213D54F300E1E30E /* OneViewController.m in Sources */,
+				B6EDEA5F213D566900E1E30E /* SegmentLayerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,10 +7,13 @@
 //
 
 #import "HomeViewController.h"
-
+#import "SegmentLayerView.h"
 @interface HomeViewController ()
 
 @property(nonatomic,strong)NSArray   *dataArray;
+
+@property (nonatomic, strong) SegmentLayerView *categoryView;
+
 @end
 
 @implementation HomeViewController
@@ -34,6 +37,18 @@
     // Do any additional setup after loading the view.
     [self buildView];
 
+    [self buildSegment];
+}
+
+-(void)buildSegment {
+    self.categoryView = [[SegmentLayerView alloc] init];
+    CGSize size =[UIScreen mainScreen].bounds.size;
+    self.categoryView.frame = CGRectMake(0, 200, size.width, 30);
+    
+   NSArray *titles = @[@"螃蟹", @"麻辣小龙虾", @"苹果", @"营养胡萝卜", @"葡萄", @"美味西瓜", @"香蕉", @"香甜菠萝", @"鸡肉", @"鱼", @"海星"];
+    self.categoryView.titles = titles;
+    
+    [self.view addSubview:self.categoryView];
 }
 
 -(void)buildView{

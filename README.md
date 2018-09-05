@@ -20,10 +20,6 @@ it, simply add the following line to your Podfile:
 pod 'ZJRoutes'
 ```
 
-## Author
-
-873391579@qq.com, 873391579@qq.com
-
 ## License
 
 ZJRoutes is available under the MIT license. See the LICENSE file for more info.
