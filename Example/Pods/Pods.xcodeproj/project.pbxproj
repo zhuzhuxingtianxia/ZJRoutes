@@ -7,20 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0610543041EF32FA9B0AE6366423948F /* ZJRoutes-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D15C0110C1CD6378ED7C748E3BC7596 /* ZJRoutes-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		113F3A65E188C2043524991478A02C9A /* ZJRouteModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EBEAD0165A85CF41DD3E611AB48A5B8 /* ZJRouteModel.m */; };
 		1770D25E433C372FAA8653F31CA8ECB8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		453A06D42B7E5FEA52F17BA2B11693D9 /* ZJRoutes.h in Headers */ = {isa = PBXBuildFile; fileRef = 242413020F6FC3AC5E405B0BDFC9CBA4 /* ZJRoutes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1EA34A223E359E72CF8DD416108B7A7E /* ZJRoutes.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7BD3D8F6DD4C999E89DB9A36AA496C /* ZJRoutes.m */; };
+		2539F23BFE867488CDD6B27E17BF5C6C /* ZJRoutes.h in Headers */ = {isa = PBXBuildFile; fileRef = 84F593207EC23CA25E5235D94FC6814A /* ZJRoutes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40184C13F952EBD3FAAD8D7A6CE37A29 /* ZJRouteModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BBE209B2BDEB0463C460E3B45F5BF48 /* ZJRouteModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5A32894F4138CA8A4B5FA198FCBAEAAD /* Pods-ZJRoutes_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE8BFEC01C141F963EBCF650A5F353F /* Pods-ZJRoutes_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6C281F4DB93CB410FA76B350185A0181 /* UIViewController+ZJMediator.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FE1C098FDD088B4DA1AEB74CDDE3721 /* UIViewController+ZJMediator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7073A7A8D97953C7355B2B24131079B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		802677E124329D3E545ABA11843BCA69 /* Pods-ZJRoutes_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E90033D88B8B5D4AF9B4E192FF0F5C30 /* Pods-ZJRoutes_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9B2C3BF42E604AB447DAE889F3073E49 /* ZJRoutes-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AABD62E5F097B2E15087CE05FBDE190 /* ZJRoutes-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A05DF52A2ED1A602EE86FE77DE58A6AC /* ZJRoutes.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A89950D18758BB67AA4B3A2E996B9C /* ZJRoutes.m */; };
+		843CAAD72ADED10C3719658D6E3D1EE7 /* UIViewController+ZJMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0780EE00E95FEB2ACEDE535F71C3DC89 /* UIViewController+ZJMediator.m */; };
+		A5C4E7823797BEE001FCE56D6E51CB1A /* ZJRoutes-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF87E92B7BF62D572F6371AF601FCD6 /* ZJRoutes-dummy.m */; };
 		AE63F1389F996220C5555D9739878C2D /* Pods-ZJRoutes_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B51335E13C1178161819CD2FADF81597 /* Pods-ZJRoutes_Tests-dummy.m */; };
-		B114E71A0A568136E085F28003FFC52F /* ZJRoutes-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B91B62DE84C1C053F5D25CCE91391F6B /* ZJRoutes-dummy.m */; };
 		B1CB9859DF791B3F1B1DDDCF5E9E65D0 /* Pods-ZJRoutes_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB934B907E80553B4AAAF623556DB16 /* Pods-ZJRoutes_Example-dummy.m */; };
-		B68C2261213F6B8800AAFB43 /* UIViewController+ZJMediator.h in Headers */ = {isa = PBXBuildFile; fileRef = B68C225F213F6B8700AAFB43 /* UIViewController+ZJMediator.h */; };
-		B68C2262213F6B8800AAFB43 /* UIViewController+ZJMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = B68C2260213F6B8700AAFB43 /* UIViewController+ZJMediator.m */; };
-		D5000282BDBF48134A81D6C01C74D9B5 /* ZJRouteModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F605EFAD3DD4AC2FE30D4B17FE1EDF4B /* ZJRouteModel.m */; };
-		E648799936D1B6E9274344A4C264C59C /* ZJRouteModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DD32789D1E7F4433A63C6F789454048 /* ZJRouteModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8F89A92B8768D24A38D47EA2599C20C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,45 +42,45 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		025BCA01D597FD1BAE70ADE39E62E895 /* ZJRoutes.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZJRoutes.xcconfig; sourceTree = "<group>"; };
-		22F3729A1E0126A3767668074611191E /* ZJRoutes.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ZJRoutes.modulemap; sourceTree = "<group>"; };
-		242413020F6FC3AC5E405B0BDFC9CBA4 /* ZJRoutes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZJRoutes.h; path = ZJRoutes/Classes/ZJRoutes.h; sourceTree = "<group>"; };
+		0780EE00E95FEB2ACEDE535F71C3DC89 /* UIViewController+ZJMediator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+ZJMediator.m"; path = "ZJRoutes/Classes/UIViewController+ZJMediator.m"; sourceTree = "<group>"; };
+		07D3A17987CCECE5521343CFA2FD404B /* ZJRoutes-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZJRoutes-prefix.pch"; sourceTree = "<group>"; };
+		1D7BD3D8F6DD4C999E89DB9A36AA496C /* ZJRoutes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZJRoutes.m; path = ZJRoutes/Classes/ZJRoutes.m; sourceTree = "<group>"; };
+		21EF40F08DE95F2EE3131CE4B0E1FAD9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		26725340968EB3E733A5ACA310BA60BA /* Pods-ZJRoutes_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZJRoutes_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		2DD32789D1E7F4433A63C6F789454048 /* ZJRouteModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZJRouteModel.h; path = ZJRoutes/Classes/ZJRouteModel.h; sourceTree = "<group>"; };
+		2BBE209B2BDEB0463C460E3B45F5BF48 /* ZJRouteModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZJRouteModel.h; path = ZJRoutes/Classes/ZJRouteModel.h; sourceTree = "<group>"; };
 		33D5C506880EB23D5E25D9ABE16355DC /* Pods-ZJRoutes_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ZJRoutes_Tests.modulemap"; sourceTree = "<group>"; };
-		37670D89E332F8338ABC03043C445A0F /* ZJRoutes-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZJRoutes-prefix.pch"; sourceTree = "<group>"; };
 		39A27328E0D5D25DD9025F2FBE95C397 /* Pods-ZJRoutes_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZJRoutes_Tests-resources.sh"; sourceTree = "<group>"; };
 		3E3BC44EFCF20769E3E7464645094B9F /* Pods-ZJRoutes_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZJRoutes_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		4A826494158AE1277BC71FCFA0BF9E1C /* Pods-ZJRoutes_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZJRoutes_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		58DAF4188911DFDC9A8025DB34889D9F /* Pods_ZJRoutes_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZJRoutes_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FE1C098FDD088B4DA1AEB74CDDE3721 /* UIViewController+ZJMediator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+ZJMediator.h"; path = "ZJRoutes/Classes/UIViewController+ZJMediator.h"; sourceTree = "<group>"; };
+		58DAF4188911DFDC9A8025DB34889D9F /* Pods_ZJRoutes_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ZJRoutes_Example.framework; path = "Pods-ZJRoutes_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CC956B51087E36C2F352C30B1AB8D8D /* Pods-ZJRoutes_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZJRoutes_Example-frameworks.sh"; sourceTree = "<group>"; };
+		5EBEAD0165A85CF41DD3E611AB48A5B8 /* ZJRouteModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZJRouteModel.m; path = ZJRoutes/Classes/ZJRouteModel.m; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		69A8CFA6F255ACF4CF35145250816A49 /* Pods-ZJRoutes_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZJRoutes_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		6AABD62E5F097B2E15087CE05FBDE190 /* ZJRoutes-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZJRoutes-umbrella.h"; sourceTree = "<group>"; };
 		72C951A8DB9968EEFEF5746FA6945634 /* Pods-ZJRoutes_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZJRoutes_Example.release.xcconfig"; sourceTree = "<group>"; };
-		7F844EB64289649ADB85D89686602D3E /* ZJRoutes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZJRoutes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F844EB64289649ADB85D89686602D3E /* ZJRoutes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZJRoutes.framework; path = ZJRoutes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F593207EC23CA25E5235D94FC6814A /* ZJRoutes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZJRoutes.h; path = ZJRoutes/Classes/ZJRoutes.h; sourceTree = "<group>"; };
 		8BB934B907E80553B4AAAF623556DB16 /* Pods-ZJRoutes_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZJRoutes_Example-dummy.m"; sourceTree = "<group>"; };
 		8F85FF34F35A6FEED8F39CC812AB09FA /* Pods-ZJRoutes_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZJRoutes_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		99D2770252D5C5A38D1357DD2BAE2202 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		9D15C0110C1CD6378ED7C748E3BC7596 /* ZJRoutes-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZJRoutes-umbrella.h"; sourceTree = "<group>"; };
+		9F23CB7C424651A439E7ABDD3358126A /* ZJRoutes.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = ZJRoutes.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A7C12D3F10795205B40548072E5D296A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A7C82CADA238FBCCBD56D6F4F8175493 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		B4B8F7F9F71A9812B46E7DC2CE01AD02 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4D07A7A6A6B4BDACBD01F9F9124217C /* Pods-ZJRoutes_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZJRoutes_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		B51335E13C1178161819CD2FADF81597 /* Pods-ZJRoutes_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZJRoutes_Tests-dummy.m"; sourceTree = "<group>"; };
-		B68C225F213F6B8700AAFB43 /* UIViewController+ZJMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+ZJMediator.h"; path = "ZJRoutes/Classes/UIViewController+ZJMediator.h"; sourceTree = "<group>"; };
-		B68C2260213F6B8700AAFB43 /* UIViewController+ZJMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+ZJMediator.m"; path = "ZJRoutes/Classes/UIViewController+ZJMediator.m"; sourceTree = "<group>"; };
-		B91B62DE84C1C053F5D25CCE91391F6B /* ZJRoutes-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZJRoutes-dummy.m"; sourceTree = "<group>"; };
-		C9C7A1FD175B348DDCC633C8088851FF /* Pods_ZJRoutes_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZJRoutes_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC46D76DE49A619C275C2509C5CECC38 /* ZJRoutes.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = ZJRoutes.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C9C7A1FD175B348DDCC633C8088851FF /* Pods_ZJRoutes_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ZJRoutes_Tests.framework; path = "Pods-ZJRoutes_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4C3B4FB3E634F9325F123576065DAA3 /* ZJRoutes.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZJRoutes.xcconfig; sourceTree = "<group>"; };
 		D61FFE75DFF4E71CAC138AB1E9E77F9F /* Pods-ZJRoutes_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ZJRoutes_Example.modulemap"; sourceTree = "<group>"; };
 		DFD57E4C8C99BF0C4A25E0ED3E45A5AD /* Pods-ZJRoutes_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZJRoutes_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E0E5FF8AB03370AE91E1C4B20ADF0507 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		E2D73323D6FC449B894ECB86AC99EDF1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E90033D88B8B5D4AF9B4E192FF0F5C30 /* Pods-ZJRoutes_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZJRoutes_Tests-umbrella.h"; sourceTree = "<group>"; };
+		EBF87E92B7BF62D572F6371AF601FCD6 /* ZJRoutes-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZJRoutes-dummy.m"; sourceTree = "<group>"; };
 		EE00D71203FD2EA1BA2FC293F9AF28EF /* Pods-ZJRoutes_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZJRoutes_Example-resources.sh"; sourceTree = "<group>"; };
 		EFD78BBB821A2200950B948F5BC059FE /* Pods-ZJRoutes_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZJRoutes_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		F3A89950D18758BB67AA4B3A2E996B9C /* ZJRoutes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZJRoutes.m; path = ZJRoutes/Classes/ZJRoutes.m; sourceTree = "<group>"; };
-		F605EFAD3DD4AC2FE30D4B17FE1EDF4B /* ZJRouteModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZJRouteModel.m; path = ZJRoutes/Classes/ZJRouteModel.m; sourceTree = "<group>"; };
+		F489297A737989C5064E46F57C0386FE /* ZJRoutes.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ZJRoutes.modulemap; sourceTree = "<group>"; };
+		F6F1F536D4180454F2BDC4ED79A4E830 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAE8BFEC01C141F963EBCF650A5F353F /* Pods-ZJRoutes_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZJRoutes_Example-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,18 +112,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3171CBCDA2A183C89E5BCA439C0BF7C6 /* Support Files */ = {
+		067CF54FA3715F6C568412EEC451F138 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				E2D73323D6FC449B894ECB86AC99EDF1 /* Info.plist */,
-				22F3729A1E0126A3767668074611191E /* ZJRoutes.modulemap */,
-				025BCA01D597FD1BAE70ADE39E62E895 /* ZJRoutes.xcconfig */,
-				B91B62DE84C1C053F5D25CCE91391F6B /* ZJRoutes-dummy.m */,
-				37670D89E332F8338ABC03043C445A0F /* ZJRoutes-prefix.pch */,
-				6AABD62E5F097B2E15087CE05FBDE190 /* ZJRoutes-umbrella.h */,
+				F6F1F536D4180454F2BDC4ED79A4E830 /* Info.plist */,
+				F489297A737989C5064E46F57C0386FE /* ZJRoutes.modulemap */,
+				D4C3B4FB3E634F9325F123576065DAA3 /* ZJRoutes.xcconfig */,
+				EBF87E92B7BF62D572F6371AF601FCD6 /* ZJRoutes-dummy.m */,
+				07D3A17987CCECE5521343CFA2FD404B /* ZJRoutes-prefix.pch */,
+				9D15C0110C1CD6378ED7C748E3BC7596 /* ZJRoutes-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/ZJRoutes";
+			sourceTree = "<group>";
+		};
+		30114CAB7DAEC9F0156E936FA484AD64 /* ZJRoutes */ = {
+			isa = PBXGroup;
+			children = (
+				4FE1C098FDD088B4DA1AEB74CDDE3721 /* UIViewController+ZJMediator.h */,
+				0780EE00E95FEB2ACEDE535F71C3DC89 /* UIViewController+ZJMediator.m */,
+				2BBE209B2BDEB0463C460E3B45F5BF48 /* ZJRouteModel.h */,
+				5EBEAD0165A85CF41DD3E611AB48A5B8 /* ZJRouteModel.m */,
+				84F593207EC23CA25E5235D94FC6814A /* ZJRoutes.h */,
+				1D7BD3D8F6DD4C999E89DB9A36AA496C /* ZJRoutes.m */,
+				CA703CC33D6BF4DAE3533DD654AC1EF2 /* Pod */,
+				067CF54FA3715F6C568412EEC451F138 /* Support Files */,
+			);
+			name = ZJRoutes;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		55A08171E4323607D598333C054B88AF /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				30114CAB7DAEC9F0156E936FA484AD64 /* ZJRoutes */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		7544AFD33E2FE5D9DDC065F7E355D5A5 /* Pods-ZJRoutes_Tests */ = {
@@ -148,21 +172,11 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				D36BDF3983061D91945D47C89D4F70F6 /* Development Pods */,
+				55A08171E4323607D598333C054B88AF /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				CC9B6C63B4CC388CA530127A0609D402 /* Products */,
 				AA1563585751B78DFAAF474B0827030A /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		A162C11D16C48FBB7794A6DAB739F6BE /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				A7C82CADA238FBCCBD56D6F4F8175493 /* LICENSE */,
-				E0E5FF8AB03370AE91E1C4B20ADF0507 /* README.md */,
-				CC46D76DE49A619C275C2509C5CECC38 /* ZJRoutes.podspec */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 		AA1563585751B78DFAAF474B0827030A /* Targets Support Files */ = {
@@ -182,20 +196,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C9A5DC7F636D6BE70BC622AD95B02D8D /* ZJRoutes */ = {
+		CA703CC33D6BF4DAE3533DD654AC1EF2 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				2DD32789D1E7F4433A63C6F789454048 /* ZJRouteModel.h */,
-				F605EFAD3DD4AC2FE30D4B17FE1EDF4B /* ZJRouteModel.m */,
-				242413020F6FC3AC5E405B0BDFC9CBA4 /* ZJRoutes.h */,
-				F3A89950D18758BB67AA4B3A2E996B9C /* ZJRoutes.m */,
-				B68C225F213F6B8700AAFB43 /* UIViewController+ZJMediator.h */,
-				B68C2260213F6B8700AAFB43 /* UIViewController+ZJMediator.m */,
-				A162C11D16C48FBB7794A6DAB739F6BE /* Pod */,
-				3171CBCDA2A183C89E5BCA439C0BF7C6 /* Support Files */,
+				99D2770252D5C5A38D1357DD2BAE2202 /* LICENSE */,
+				21EF40F08DE95F2EE3131CE4B0E1FAD9 /* README.md */,
+				9F23CB7C424651A439E7ABDD3358126A /* ZJRoutes.podspec */,
 			);
-			name = ZJRoutes;
-			path = ../..;
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		CC9B6C63B4CC388CA530127A0609D402 /* Products */ = {
@@ -214,14 +222,6 @@
 				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		D36BDF3983061D91945D47C89D4F70F6 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				C9A5DC7F636D6BE70BC622AD95B02D8D /* ZJRoutes */,
-			);
-			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		D8CA930BCABE2254F9A2F5F4DF4E99CA /* Pods-ZJRoutes_Example */ = {
@@ -245,22 +245,22 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		3F9233377CC53A40A0CA04C84A71E2A4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C281F4DB93CB410FA76B350185A0181 /* UIViewController+ZJMediator.h in Headers */,
+				40184C13F952EBD3FAAD8D7A6CE37A29 /* ZJRouteModel.h in Headers */,
+				0610543041EF32FA9B0AE6366423948F /* ZJRoutes-umbrella.h in Headers */,
+				2539F23BFE867488CDD6B27E17BF5C6C /* ZJRoutes.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AD3344E639B67491473358AC2E7EFDAF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B68C2261213F6B8800AAFB43 /* UIViewController+ZJMediator.h in Headers */,
 				5A32894F4138CA8A4B5FA198FCBAEAAD /* Pods-ZJRoutes_Example-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AEE52D1542C79BB9F157EC4937B46AC1 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E648799936D1B6E9274344A4C264C59C /* ZJRouteModel.h in Headers */,
-				9B2C3BF42E604AB447DAE889F3073E49 /* ZJRoutes-umbrella.h in Headers */,
-				453A06D42B7E5FEA52F17BA2B11693D9 /* ZJRoutes.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,9 +315,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 47BB0CCE95EA1AFD0D4774B17E9376C2 /* Build configuration list for PBXNativeTarget "ZJRoutes" */;
 			buildPhases = (
-				77ACAE872708C4634AE89971B1E3B778 /* Sources */,
+				2D320257E225BEC6325016B6C6382A61 /* Sources */,
 				EF33AB2DAB52E65290BA584DAF5529C0 /* Frameworks */,
-				AEE52D1542C79BB9F157EC4937B46AC1 /* Headers */,
+				3F9233377CC53A40A0CA04C84A71E2A4 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -357,6 +357,17 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2D320257E225BEC6325016B6C6382A61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				843CAAD72ADED10C3719658D6E3D1EE7 /* UIViewController+ZJMediator.m in Sources */,
+				113F3A65E188C2043524991478A02C9A /* ZJRouteModel.m in Sources */,
+				A5C4E7823797BEE001FCE56D6E51CB1A /* ZJRoutes-dummy.m in Sources */,
+				1EA34A223E359E72CF8DD416108B7A7E /* ZJRoutes.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		39E7E6B1372661CC9AB70198443231F4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -370,17 +381,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1CB9859DF791B3F1B1DDDCF5E9E65D0 /* Pods-ZJRoutes_Example-dummy.m in Sources */,
-				B68C2262213F6B8800AAFB43 /* UIViewController+ZJMediator.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		77ACAE872708C4634AE89971B1E3B778 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D5000282BDBF48134A81D6C01C74D9B5 /* ZJRouteModel.m in Sources */,
-				B114E71A0A568136E085F28003FFC52F /* ZJRoutes-dummy.m in Sources */,
-				A05DF52A2ED1A602EE86FE77DE58A6AC /* ZJRoutes.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,7 +471,7 @@
 		};
 		55D1F80430C3835A945B9B20B20FA774 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 025BCA01D597FD1BAE70ADE39E62E895 /* ZJRoutes.xcconfig */;
+			baseConfigurationReference = D4C3B4FB3E634F9325F123576065DAA3 /* ZJRoutes.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -689,7 +689,7 @@
 		};
 		FB16E072A1E3547F98E145860629D93F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 025BCA01D597FD1BAE70ADE39E62E895 /* ZJRoutes.xcconfig */;
+			baseConfigurationReference = D4C3B4FB3E634F9325F123576065DAA3 /* ZJRoutes.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "UIViewController+ZJMediator.h"
 #import "ZJRouteModel.h"
 #import "ZJRoutes.h"
 

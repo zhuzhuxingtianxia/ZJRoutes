@@ -7,6 +7,8 @@
 //
 
 #import "HomeViewController.h"
+#import <ZJRoutes/UIViewController+ZJMediator.h>
+
 #import "SegmentLayerView.h"
 @interface HomeViewController ()
 
@@ -29,7 +31,6 @@
     }else{
        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url] options:@{} completionHandler:nil];
     }
-    
     
 }
 - (void)viewDidLoad {
@@ -61,6 +62,22 @@
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-leading-[button(100)]" options:0 metrics:@{@"leading":[NSNumber numberWithDouble:(self.view.frame.size.width-100)/2]} views:NSDictionaryOfVariableBindings(button)]];
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-top-[button(40)]" options:0 metrics:@{@"top":[NSNumber numberWithDouble:64]} views:NSDictionaryOfVariableBindings(button)]];
     
+    UIButton *button1 = [UIButton buttonWithType:UIButtonTypeSystem];
+    [button1 setTitle:@"Mediator" forState:UIControlStateNormal];
+    button1.translatesAutoresizingMaskIntoConstraints = NO;
+    [button1 addTarget:self action:@selector(touchMediator) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button1];
+    
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-leading-[button1(100)]" options:0 metrics:@{@"leading":[NSNumber numberWithDouble:(self.view.frame.size.width-100)/2]} views:NSDictionaryOfVariableBindings(button1)]];
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-top-[button1(40)]" options:0 metrics:@{@"top":[NSNumber numberWithDouble:164]} views:NSDictionaryOfVariableBindings(button1)]];
+    
+}
+
+-(void)touchMediator {
+    NSDictionary *dict = @{@"baseTitle":@"标题",
+                           @"userName":@"用户名"
+                           };
+    [self routeTargetController:@"Mediator1Controller" withParams:dict];
 }
 
 - (void)didReceiveMemoryWarning {

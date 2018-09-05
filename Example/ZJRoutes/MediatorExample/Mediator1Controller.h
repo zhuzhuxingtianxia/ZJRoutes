@@ -10,4 +10,6 @@
 
 @interface Mediator1Controller : BaseController
 
+@property (nonatomic,copy)NSString *userName;
+
 @end

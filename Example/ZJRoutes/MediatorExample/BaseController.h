@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <ZJRoutes/UIViewController+ZJMediator.h>
 
 @interface BaseController : UIViewController
 @property (nonatomic,copy)NSString  *baseTitle;

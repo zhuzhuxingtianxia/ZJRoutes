@@ -18,16 +18,25 @@ static NSMutableDictionary *routesMap = nil;
 }
 
 -(UIViewController*)routeTargetController:(NSString*)aClass withParams:(NSDictionary *)dict byRouteStyle:(ZJRouteStyle)routeStyle{
-    
     Class cl = NSClassFromString(aClass);
-    if (![cl isKindOfClass:[UIViewController class]]) {
+    UIViewController *viewController = nil;
+    if (routeStyle == ZJRoute_Pop) {
+        viewController = [self routeFoundClass:cl];
+    }else if (routeStyle == ZJRoute_Dismiss){
+        
+        [self jumpToVC:viewController routeType:routeStyle];
+        return self;
+    }else{
+        viewController = [[cl alloc] init];
+    }
+    
+    if (!viewController || ![viewController isKindOfClass:[UIViewController class]]) {
         NSString *errorString = [NSString stringWithFormat:@"<%@> a not exist Controller",aClass];
-        NSAssert(YES, errorString);
+        NSAssert(NO, errorString);
         return nil;
     }
     
-    UIViewController *viewController = [[cl alloc] init];
-    if (dict) {
+    if (dict.allKeys > 0) {
         [self paramToVc:viewController param:dict];
     }
     [self jumpToVC:viewController routeType:routeStyle];
@@ -42,6 +51,7 @@ static NSMutableDictionary *routesMap = nil;
 -(UIViewController*)routeTargetIdentifier:(NSString*)identifier withParams:(NSDictionary *)dict byRouteStyle:(ZJRouteStyle)routeStyle {
     Class aClass = NSClassFromString(identifier);
     UIViewController *viewController;
+    
     if (![aClass isKindOfClass:[UIViewController class]]) {
         viewController = [self routeTargetIdentifier:identifier inStoryboard:@"Main" withParams:dict byRouteStyle:routeStyle];
         return viewController;
@@ -57,10 +67,10 @@ static NSMutableDictionary *routesMap = nil;
     
     if (!viewController) {
         NSString *errorString = [NSString stringWithFormat:@"not found identifier <%@> in all storyboard",identifier];
-        NSAssert(YES, errorString);
+        NSAssert(NO, errorString);
     }
     
-    if (dict) {
+    if (dict.allKeys > 0) {
         [self paramToVc:viewController param:dict];
     }
     [self jumpToVC:viewController routeType:routeStyle];
@@ -74,11 +84,11 @@ static NSMutableDictionary *routesMap = nil;
     UIViewController *viewController = [[UIStoryboard storyboardWithName:storyboard bundle:nil] instantiateViewControllerWithIdentifier:identifier];
     if (!viewController) {
         NSString *errorString = [NSString stringWithFormat:@"not found identifier <%@> in storyboard<%@>",identifier,storyboard];
-        NSAssert(YES, errorString);
+        NSAssert(NO, errorString);
         return nil;
     }
     
-    if (dict) {
+    if (dict.allKeys > 0) {
         [self paramToVc:viewController param:dict];
     }
     [self jumpToVC:viewController routeType:routeStyle];
@@ -104,14 +114,32 @@ static NSMutableDictionary *routesMap = nil;
             }
             break;
         case ZJRoute_Present:
-            [self presentViewController:viewController animated:YES completion:^{
-                
-            }];
+            if (self.navigationController) {
+                Class navClass = [self.navigationController class];
+                UINavigationController *nav = [[navClass alloc] initWithRootViewController:viewController];
+                [self presentViewController:nav animated:YES completion:^{
+                    
+                }];
+            }else{
+                [self presentViewController:viewController animated:YES completion:^{
+                    
+                }];
+            }
+            
             break;
         case ZJRoute_PresentNo:
-            [self presentViewController:viewController animated:NO completion:^{
-                
-            }];
+            if (self.navigationController) {
+                Class navClass = [self.navigationController class];
+                UINavigationController *nav = [[navClass alloc] initWithRootViewController:viewController];
+                [self presentViewController:nav animated:NO completion:^{
+                    
+                }];
+            }else{
+                [self presentViewController:viewController animated:NO completion:^{
+                    
+                }];
+            }
+            
             break;
         case ZJRoute_Dismiss:
             [self dismissViewControllerAnimated:YES completion:^{
@@ -122,6 +150,24 @@ static NSMutableDictionary *routesMap = nil;
         default:
             break;
     }
+}
+
+-(UIViewController*)routeFoundClass:(Class)aClass{
+    UIViewController *viewController = nil;
+    NSArray *array = self.navigationController.viewControllers;
+    NSInteger index = array.count;
+    for (NSInteger i=array.count-1; i >= 0; i--) {
+        UIViewController *vc = array[i];
+        if ([vc isMemberOfClass:aClass]) {
+            index = i;
+            break;
+        }
+    }
+    if (index>= 0 && index<array.count) {
+        viewController = array[index];
+    }
+    
+    return viewController;
 }
 
 -(NSArray *)storyboardArray {
@@ -149,17 +195,38 @@ static NSMutableDictionary *routesMap = nil;
 }
 
 -(void)paramToVc:(UIViewController *)vc param:(NSDictionary<NSString *,NSString *> *)parameters{
+    NSMutableArray *keysArray = [NSMutableArray array];
+    [keysArray addObjectsFromArray:[self _copyPropertyList:vc]];
+    
+    for (int i = 0; i < keysArray.count; i++) {
+       
+        NSString *key = keysArray[i];
+        NSString *param = parameters[key];
+        if (param != nil) {
+            [vc setValue:param forKey:key];
+        }
+    }
+    
+}
+
+-(NSArray*)_copyPropertyList:(UIViewController *)vc {
+    NSMutableArray *keyArray = [NSMutableArray array];
     //runtime将参数传递至需要跳转的控制器
     unsigned int outCount = 0;
     objc_property_t * properties = class_copyPropertyList(vc.class , &outCount);
     for (int i = 0; i < outCount; i++) {
         objc_property_t property = properties[i];
         NSString *key = [NSString stringWithUTF8String:property_getName(property)];
-        NSString *param = parameters[key];
-        if (param != nil) {
-            [vc setValue:param forKey:key];
-        }
+        [keyArray addObject:key];
     }
+    
+    if (![NSStringFromClass(vc.superclass) isEqualToString:@"UIViewController"]) {
+        
+       NSArray *array = [self _copyPropertyList:(UIViewController*)vc.superclass];
+        [keyArray addObjectsFromArray:array];
+    }
+    
+    return keyArray;
 }
 
 @end

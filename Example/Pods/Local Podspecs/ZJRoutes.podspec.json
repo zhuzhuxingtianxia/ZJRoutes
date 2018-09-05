@@ -1,6 +1,6 @@
 {
   "name": "ZJRoutes",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "summary": "ZJRoutes一个轻量的路由框架",
   "description": "TODO: 实现一个简单的路由框架.",
   "homepage": "https://github.com/zhuzhuxingtianxia/ZJRoutes",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/zhuzhuxingtianxia/ZJRoutes.git",
-    "tag": "0.0.1"
+    "tag": "0.0.2"
   },
   "platforms": {
     "ios": "8.0"

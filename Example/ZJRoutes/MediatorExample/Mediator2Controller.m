@@ -17,6 +17,37 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.title = @"Mediator2";
+    
+    switch (self.myEnum) {
+        case MyEnumValueA:
+            NSLog(@"MyEnumValueA");
+            break;
+        case MyEnumValueB:
+            NSLog(@"MyEnumValueB");
+            break;
+        case MyEnumValueC:
+            NSLog(@"MyEnumValueC");
+            break;
+            
+        default:
+            NSLog(@"MyEnumValueUnkomn");
+            break;
+    }
+    
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
+    button.frame = CGRectMake(10, 240, 200, 40);
+    [button setTitle:@"下一页" forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(nextAction:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
+    
+}
+
+-(void)nextAction:(UIButton*)sender {
+    NSDictionary *dict = @{
+                           };
+    [self routeTargetController:@"Mediator3Controller" withParams:dict byRouteStyle:ZJRoute_Push];
 }
 
 - (void)didReceiveMemoryWarning {

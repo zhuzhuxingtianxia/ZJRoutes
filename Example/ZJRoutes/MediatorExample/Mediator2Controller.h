@@ -7,7 +7,9 @@
 //
 
 #import "BaseController.h"
-
+#import "ENUM.h"
 @interface Mediator2Controller : BaseController
+
+@property(nonatomic,assign)MyEnum myEnum;
 
 @end

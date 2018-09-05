@@ -83,6 +83,7 @@
 		B68C226B213F7E8100AAFB43 /* Mediator2Controller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mediator2Controller.m; sourceTree = "<group>"; };
 		B68C226D213F7E8F00AAFB43 /* Mediator3Controller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mediator3Controller.h; sourceTree = "<group>"; };
 		B68C226E213F7E8F00AAFB43 /* Mediator3Controller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mediator3Controller.m; sourceTree = "<group>"; };
+		B68C2270213F9CDE00AAFB43 /* ENUM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ENUM.h; sourceTree = "<group>"; };
 		B6EDEA40213D54E700E1E30E /* TabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabbarController.m; sourceTree = "<group>"; };
 		B6EDEA41213D54E700E1E30E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B6EDEA42213D54E700E1E30E /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
@@ -235,6 +236,7 @@
 				B68C226B213F7E8100AAFB43 /* Mediator2Controller.m */,
 				B68C226D213F7E8F00AAFB43 /* Mediator3Controller.h */,
 				B68C226E213F7E8F00AAFB43 /* Mediator3Controller.m */,
+				B68C2270213F9CDE00AAFB43 /* ENUM.h */,
 			);
 			path = MediatorExample;
 			sourceTree = "<group>";
