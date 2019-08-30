@@ -4,7 +4,7 @@
 #
 # Any lines starting with a # are optional, but their use is encouraged
 # To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
-#
+# 加入资源文件：https://mp.weixin.qq.com/s?__biz=MzA5NzMwODI0MA==&mid=2647759665&idx=1&sn=4b1f2fde434f1b45ff3eac627a7b7fd9
 
 Pod::Spec.new do |s|
   s.name             = 'ZJRoutes'
